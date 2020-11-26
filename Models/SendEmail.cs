@@ -20,10 +20,10 @@ namespace Tema2.Models
                 smtpClient.EnableSsl = true;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("mariamanivascau@gmail.com", "Riciui@ma23");
+                smtpClient.Credentials = new NetworkCredential("email", "pass");
 
                 MailMessage emailMessage = new MailMessage();
-                emailMessage.From = new MailAddress("mariamanivascau@gmail.com");
+                emailMessage.From = new MailAddress("email");
                 emailMessage.Subject = subject;
                 emailMessage.Body = body;
                 emailMessage.To.Add(email);
